@@ -1,0 +1,235 @@
+:root{
+    --black: #070706;
+    --grey: #6b6969;
+    --orange: #fe9a37;
+    --green : #cbdb57;
+    --purple : #9585ba;
+    --brn : #5c4f45;
+    --red : #f96a4b;
+    --cream : #dea44d;
+    --skin : #9e5c32;
+    --btns :#3a3a3a;
+
+    /* font */
+    --title: 'Noto Sans', sans-serif;
+    --text: 'Open Sans', sans-serif;
+    --name : 'Oswald', sans-serif;
+}
+body{
+    background-color: var(--black);
+    color: whitesmoke;
+}
+
+/* Navbar */
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    max-height: 61px ;
+}
+.left-nav{
+    display: flex;
+}
+.noteicon{
+    padding-left: 2px;
+    padding-top: 10px;
+    color: var(--orange);
+}
+.left-nav p{
+    font-family: var(--name);
+    font-weight: 300;
+    color: whitesmoke;
+    padding-left: 10px;
+    font-size: 1.25rem;
+
+}
+.center-nav{
+    padding-top: 17px;
+}
+.searchbar{
+    width: 16rem;
+    height: 1.5rem;
+    border: none;
+    text-align: center;
+    border-radius: 9px;
+    background-color: var(--btns);
+    color: whitesmoke;
+    outline: none;
+}
+.searchBtn{
+    padding: 1px 7px;
+    font-size: 20px;
+    color: whitesmoke;
+    cursor: pointer;
+}
+.right-nav{
+    padding-top: 9px;
+    padding-right: 9px;
+    color: var(--grey);
+    cursor: pointer;
+}
+
+/* MAIN */
+.main{
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+}
+/* left  */
+.leftPart{
+position: relative;
+}
+
+/* inside left part */
+
+.leftWrapper{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-gap: 1rem;
+    padding: 9px;
+    
+}
+.notesBox{
+    /* background-color: var(--orange); */
+    border-radius: 9px;
+    text-align: center;
+    cursor: pointer;
+}
+.notesBox:hover{
+    transform: scale(107%);
+}
+
+.notesTitle{
+    font-family: var(--title);
+}
+.creationDate {
+    font-family: var(--text);
+    padding: 6px;
+    font-size: .85rem;
+}
+.newButton{
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(48, 194, 97); 
+    cursor: pointer;
+}
+/* right */
+
+
+.rightPart{
+    background-color: var(--);
+    height: 90vh;
+    border-left : 1px solid var(--btns);
+}
+
+/* inside right */
+.btn-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 9px 9px;
+}
+.btn-right{
+    background-color: var(--btns);
+    padding: 5px;
+    border-radius: 9px;
+    cursor: pointer;
+}
+.textarea-right{
+    background-color: var(--black);
+    color: whitesmoke;
+    margin: 20px 0px;
+    border: none;
+    width: 100%;
+    resize: none;
+    outline: none;
+}
+#title-right{
+    display: block;
+    font-family: var(--title);
+    font-size: 1.75rem;
+    height: 3rem;
+    text-align: center;
+}
+.line{
+    height: .75px;
+    width: 80%;
+    background-color: #676666;
+    background-color: whitesmoke;
+    display: flex;
+    margin: auto;
+}
+.date-right{
+    display: block;
+    font-family: var(--name);
+    text-align: center;
+    color: #757575;
+    margin: 5px 0px;
+}
+#content-right{
+    height: 62vh;
+    font-family: var(--text);
+    font-size: 1.5rem;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+
+/* Media Query for Phones */
+
+@media only screen and (max-width : 600px) and (min-width:410px) {
+    .left-nav p{
+        font-size: 1rem;
+    }
+    .searchbar{
+        width: 10rem;
+    }
+    .mainMobile{
+        display: flex;
+    }
+    .mobileEdit{
+        width: 100%;
+        border: none;
+    }
+    .hiddenLeftPart{
+        display: none;
+    }
+    .hiddenRightPart{
+        display: none;
+    }
+    .notesBox{
+        margin: 0.3em 1.4em;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 410px){
+    .left-nav p{
+        font-size: .8rem;
+    }
+    .searchbar{
+        width: 5rem;
+    }
+    .mainMobile{
+        display: flex;
+    }
+    .mobileEdit{
+        width: 100%;
+        border: none;
+    }
+    .hiddenLeftPart{
+        display: none;
+    }
+    #title-right{
+        font-size: 1.25rem;
+        margin-bottom: 5px;
+    }
+    .date-right{
+        font-size: .75rem;
+    }
+    .hiddenRightPart{
+        display: none;
+    }
+}

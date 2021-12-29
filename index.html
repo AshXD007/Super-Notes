@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Open+Sans&family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Super Notes</title>
+</head>
+<body>
+    <div class="navbar-container">
+        <div class="left-nav">
+            <i class="fas fa-sticky-note noteicon fa-3x"></i>
+            <p class="appName">SUPER NOTES</p>
+        </div>
+        <div class="center-nav">
+            <form action="" class="searchPage">
+                <input placeholder="Search" class="searchbar" autocomplete="off" >
+                <i class="fas fa-search searchBtn"></i>
+            </form>
+        </div>
+        <div class="right-nav">
+            <img src="assets/more_horiz_white_36dp.svg" class="dotBtn">
+        </div>
+    </div>
+    <div class="main mainMobile">
+        <div class="leftPart mobileHome ">
+            <div class="leftWrapper">
+                <!-- <div class="notesBox">
+                    <p class="notesTitle">This is the title of my notes</p>
+                    <p class="creationDate">May 69 4200</p>
+                </div>
+                <div class="notesBox">
+                    <p class="notesTitle">This is the title of my notes</p>
+                    <p class="creationDate">May 69 4200</p>
+                </div>
+                <div class="notesBox">
+                    <p class="notesTitle">This is the title of my notes</p>
+                    <p class="creationDate">May 69 4200</p>
+                </div>
+                <div class="notesBox">
+                    <p class="notesTitle">This is the title of my notes</p>
+                    <p class="creationDate">May 69 4200</p>
+                </div>
+                 -->
+
+            </div>
+                <button class="newButton">+</button>
+        </div>
+        <div class="rightPart mobileEdit">
+           <div class="btn-container">
+            <div class="backBtn">
+                <i class="fas fa-angle-left fa-2x btn-right"></i>
+            </div>
+            <div class="saveBtn">
+                <i class="fas fa-check fa-2x btn-right"></i>
+            </div>
+            <div class="deleteBtn">
+                <i class="fas fa-trash fa-2x btn-right"></i>
+            </div>
+           </div>
+           <div class="text-wrapper">
+               <textarea name="title-text" id="title-right" placeholder="Enter the Title" maxlength="30" class="textarea-right"></textarea>
+               <div class="line"></div>
+               <span class="date-right">May 69 , 4200</span>
+               <div class="line"></div>
+               <textarea name="content-text" id="content-right" class="textarea-right" placeholder="Enter the note" maxlength="400"></textarea>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/cbb2131180.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
